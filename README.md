@@ -1,9 +1,11 @@
 # Inversiones San Cristóbal
 
-Demo corporativa estática de bodegas, oficina de administración y dos baños.
+Sitio corporativo estático con portada de acceso a dos áreas:
 
-Las superficies y contactos son de muestra. Algunas fotografías son visualizaciones digitales de espacios acondicionados. El formulario prepara un resumen y no envía consultas.
+- `index.html`: portada Bodegas y Coworking, en dos columnas en escritorio y apilada en celular.
+- `bodegas.html`: bodegas, oficina de administración y dos baños.
+- `coworking.html`: presentación del coworking y galería con fotografías reales.
 
-## GitHub Pages
+Las superficies y contactos de la demo son de muestra. Las imágenes de bodegas acondicionadas se identifican como visualizaciones digitales. Los formularios preparan un resumen local y no envían consultas.
 
-En Settings > Pages, seleccionar Deploy from a branch, rama main y carpeta / (root), y guardar.
+Publicación en GitHub Pages desde `main`, carpeta raíz.
