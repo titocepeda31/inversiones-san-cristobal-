@@ -33,5 +33,8 @@ body.modal-open{overflow:hidden}
 .form-trap{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .form-status{margin-top:15px;font-size:14px;overflow-wrap:anywhere}.form-status:empty{display:none}.form-status[data-state="error"]{color:#9b202c}.form-status[data-state="success"]{color:#146c3b}
 form button:disabled{opacity:.65;cursor:wait}
-footer{padding-bottom:110px}.portal-footer{padding-bottom:110px}
+/* Reserve horizontal space for the fixed actions instead of a tall empty footer. */
+footer{padding-right:210px}
+.portal-footer{padding-top:22px;padding-bottom:22px}
+@media(max-width:700px){footer{padding-right:88px}.portal-footer{padding:22px 88px 22px 6%;align-items:flex-start;text-align:left}}
 @media(max-width:700px){.whatsapp-fixed{width:54px;padding:0}.whatsapp-fixed span{display:none}.floating-actions{right:max(16px,env(safe-area-inset-right))}.contact-details strong{max-width:100%;font-size:16px}}
