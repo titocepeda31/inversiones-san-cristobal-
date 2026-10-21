@@ -1,0 +1,10 @@
+---
+# Publish only the website files into this account's existing domain folder.
+deployment:
+  tasks:
+    - >-
+      /bin/sh -eu -c 'destination="$HOME/inversionessancristobal.cl";
+      test -d "$destination";
+      test ! -L "$destination";
+      /bin/cp -f index.html bodegas.html coworking.html style.css app.js contacto.php "$destination/";
+      /bin/cp -Rf assets "$destination/"'
