@@ -22,3 +22,16 @@ body.modal-open{overflow:hidden}
 .swipe-hint{display:none;text-align:center;font-size:12px;color:#d4dce0;padding:0 16px 14px}
 @media(max-width:700px){.portal-panel-copy .eyebrow.light{font-size:11px;letter-spacing:1.2px;padding:8px 10px;margin-bottom:15px}.lightbox{max-width:100%;width:100%;border:0}.lightbox-bar{padding:12px 18px 8px}.lightbox-arrow{width:40px;height:48px;font-size:32px}.lightbox-prev{left:6px}.lightbox-next{right:6px}}
 @media(pointer:coarse){.swipe-hint{display:block}}
+
+
+/* Contact actions stay clear of page content and each other. */
+.floating-actions{position:fixed;right:max(18px,env(safe-area-inset-right));bottom:calc(20px + env(safe-area-inset-bottom));display:flex;flex-direction:column;align-items:flex-end;gap:12px;z-index:20}
+.floating-actions .scroll-top{position:static;flex-shrink:0}
+.whatsapp-fixed{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-width:54px;height:54px;padding:0 17px;border:1px solid #ffffff85;border-radius:28px;background:#146c3b;color:#fff;font-size:14px;font-weight:700;box-shadow:0 3px 18px #0004}
+.whatsapp-fixed:hover{background:#10552f}.whatsapp-fixed svg{width:29px;height:29px;flex-shrink:0}
+.contact-details a{overflow-wrap:anywhere}.contact-details a:hover{text-decoration:underline}
+.form-trap{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.form-status{margin-top:15px;font-size:14px;overflow-wrap:anywhere}.form-status:empty{display:none}.form-status[data-state="error"]{color:#9b202c}.form-status[data-state="success"]{color:#146c3b}
+form button:disabled{opacity:.65;cursor:wait}
+footer{padding-bottom:110px}
+@media(max-width:700px){.whatsapp-fixed{width:54px;padding:0}.whatsapp-fixed span{display:none}.floating-actions{right:max(16px,env(safe-area-inset-right))}.contact-details strong{max-width:100%;font-size:16px}}
